@@ -1,16 +1,18 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<title>Manage Child</title>
+<title>Play School</title>
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
 <link rel="stylesheet" type="text/css" href="css/style.css" />
 </head>
 <body>
 <!-- top panel starts here -->
 <div style="margin:auto; width:1000px;">
- <jsp:include page="/WEB-INF/jsp/layouts/header.jsp"/>
+  <div class="flt topblock"> <a href="#" class="flt1 tp_txtplay">Play School</a> <span class="flt1 tp_txtcss">CSS/XHTML SITE</span>
+    <p style="clear:left; float:left; display:inline; width:1000px; margin:90px 0px 0px 0px;"><a href="#" class="flt1 tp_home2">Home</a> <img src="images/tp_pipe.gif" width="3" height="18" alt="" class="flt tp_pipe" /> <a href="#" class="flt tp_home">About Us</a> <img src="images/tp_pipe.gif" width="3" height="18" alt="" class="flt tp_pipe" /> <a href="#" class="flt tp_home">Services</a> <img src="images/tp_pipe.gif" width="3" height="18" alt="" class="flt tp_pipe" /> <a href="#" class="flt tp_home">Products</a> <img src="images/tp_pipe.gif" width="3" height="18" alt="" class="flt tp_pipe" /> <a href="#" class="flt tp_home">Contact Us</a> </p>
+  </div>
   <!-- top panel ends here -->
-  <!-- content panel starts here11 -->
+  <!-- content panel starts here -->
   <div id="cpblock">
     <div class="flt1 cpinner">
       <div class="flt lp_block"> <img src="images/lp_imgpair.jpg" width="51" height="37" alt="" class="flt1 lp_imgpair" /> <span class="flt lp_txtmem">member <span style="color:#2C3E46;">login</span></span><br />
@@ -19,10 +21,7 @@
         <br />
         <span class="flt1 lp_txtlog2">Password</span>
         <input name="password" type="password" class="flt lp_textbox2" />
-        <a href="#" class="flt lp_arrow"><img src="images/lp_arrow.gif" width="24" height="20" alt="" /></a>
-		 <span class="flt1 lp_txtlog" style="float: left;padding-left: 100px;width: 100%;cursor:pointer;">Register Yourself</span>
-		
-		<img src="images/lp_boxcorn1.gif" width="258" height="12" alt="" class="flt1 lp_boxtop1" />
+        <a href="#" class="flt lp_arrow"><img src="images/lp_arrow.gif" width="24" height="20" alt="" /></a> <img src="images/lp_boxcorn1.gif" width="258" height="12" alt="" class="flt1 lp_boxtop1" />
         <div class="flt1 lp_boxbg"> <span class="flt1 lp_txtour">our solutions</span><br />
           <span class="flt1 lp_boxtxt">You may conduct your financial operations in one of our branches. has employed the top security for various online transactions. Though online banking fraud is widely prevalent.ity for various online transactions. </span><br />
           <img src="images/lp_ashsqr.jpg" width="3" height="3" alt="" class="flt1 lp_boxbult" /> <a href="#" class="flt lp_boxtxt2">Banks and Finance</a> <img src="images/lp_ashsqr.jpg" width="3" height="3" alt="" class="flt1 lp_boxbult" /> <a href="#" class="flt lp_boxtxt2">Markets and Investing</a> <img src="images/lp_ashsqr.jpg" width="3" height="3" alt="" class="flt1 lp_boxbult" /> <a href="#" class="flt lp_boxtxt2">Company and Industry</a> <img src="images/lp_ashsqr.jpg" width="3" height="3" alt="" class="flt1 lp_boxbult" /> <a href="#" class="flt lp_boxtxt2">Wealth Management</a> <img src="images/lp_ashsqr.jpg" width="3" height="3" alt="" class="flt1 lp_boxbult" /> <a href="#" class="flt lp_boxtxt2">Banking Law</a> <img src="images/lp_ashsqr.jpg" width="3" height="3" alt="" class="flt1 lp_boxbult" /> <a href="#" class="flt lp_boxtxt2">Arbitration Less</a> <img src="images/lp_ashsqr.jpg" width="3" height="3" alt="" class="flt1 lp_boxbult" /> <a href="#" class="flt lp_boxtxt2">Income Tax</a> <img src="images/lp_ashsqr.jpg" width="3" height="3" alt="" class="flt1 lp_boxbult" /> <a href="#" class="flt lp_boxtxt2">Sales Tax Charges</a> <img src="images/lp_ashsqr.jpg" width="3" height="3" alt="" class="flt1 lp_boxbult" /> <a href="#" class="flt lp_boxtxt2">Mortgage</a> <img src="images/lp_ashsqr.jpg" width="3" height="3" alt="" class="flt1 lp_boxbult" /> <a href="#" class="flt lp_boxtxt2">Credit Policy</a> <img src="images/lp_ashsqr.jpg" width="3" height="3" alt="" class="flt1 lp_boxbult" /> <a href="#" class="flt lp_boxtxt2">Others Questions</a> </div>
@@ -44,8 +43,9 @@
     </div>
     <img src="images/cp_bottcorn.gif" width="898" height="20" alt="" class="flt1" /> </div>
   <!-- content panel ends here -->
-  <!-- footer panel starts here11 -->
-  <jsp:include page="/WEB-INF/jsp/layouts/footer.jsp"/>
- 
+  <!-- footer panel starts here -->
+  <div class="flt1 ft_bg"> <a href="#" class="flt ft_txt">home</a> <img src="images/ft_sqrwhite.gif" width="3" height="3" alt="" class="flt ft_bult" /> <a href="#" class="flt ft_txt2">about Us</a> <img src="images/ft_sqrwhite.gif" width="3" height="3" alt="" class="flt ft_bult" /> <a href="#" class="flt ft_txt2">company</a> <img src="images/ft_sqrwhite.gif" width="3" height="3" alt="" class="flt ft_bult" /> <a href="#" class="flt ft_txt2">solutions</a> <img src="images/ft_sqrwhite.gif" width="3" height="3" alt="" class="flt ft_bult" /> <a href="#" class="flt ft_txt2">support</a> <img src="images/ft_sqrwhite.gif" width="3" height="3" alt="" class="flt ft_bult" /> <a href="#" class="flt ft_txt2">contact us</a><br />
+    <span class="flt1 ft_txt3">2008 Copyright,All rights reserved. <a href="http://www.buytemplates.net/CSS-XHTML-web-templates.aspx" style="color:#ffffff;">Css/Xhtml template</a> designed by buytemplates.net</span> <a href="#" class="flt ft_button"><img src="images/ft_valid1.gif" width="80" height="18" alt="" /></a> <a href="#" class="flt ft_button2"><img src="images/ft_valid2.gif" width="80" height="18" alt="" /></a></div>
+</div>
 </body>
 </html>
