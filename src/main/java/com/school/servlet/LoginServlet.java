@@ -10,8 +10,8 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import com.school.dao.DosenDAO;
-import com.school.dao.impl.DosenDAOImpl;
+import com.school.dao.UserDAO;
+import com.school.dao.impl.UserDAOImpl;
 import com.school.db.DatabaseConnection;
 import com.school.model.User;
 
@@ -21,12 +21,12 @@ import com.school.model.User;
 public class LoginServlet extends HttpServlet {
 
     private String list = "/WEB-INF/jsp/dosen/list.jsp";
-    private String show = "/WEB-INF/jsp/dosen/show.jsp";
-    private DosenDAO dosenDAO;
+    private String home = "/WEB-INF/jsp/homepage.jsp";
+    private UserDAO userDAO;
 
     public LoginServlet() {
         try {
-            dosenDAO = new DosenDAOImpl(DatabaseConnection.getInstance().getConnection());
+        	userDAO = new UserDAOImpl(DatabaseConnection.getInstance().getConnection());
         } catch (SQLException ex) {
             ex.printStackTrace();
         }
@@ -45,11 +45,11 @@ public class LoginServlet extends HttpServlet {
 
                     niy = (niy != null) ? niy : "";
 
-                    User dosen = dosenDAO.getByNiy(niy);
+                    User dosen = null;
 
                     request.setAttribute("data", dosen);
 
-                    RequestDispatcher dispacher = request.getRequestDispatcher(show);
+                    RequestDispatcher dispacher = request.getRequestDispatcher(home);
                     dispacher.forward(request, response);
 
                 }
@@ -57,14 +57,14 @@ public class LoginServlet extends HttpServlet {
                 String nama = request.getParameter("nama");
                 if (nama != null) {
 
-                    List<User> data = dosenDAO.getByNama(nama);
+                    List<User> data =null;
 
                     request.setAttribute("data", data);
 
                     RequestDispatcher dispacher = request.getRequestDispatcher(list);
                     dispacher.forward(request, response);
                 } else {
-                    List<User> data = dosenDAO.getAll();
+                    List<User> data = null;
 
                     request.setAttribute("data", data);
 
@@ -72,7 +72,7 @@ public class LoginServlet extends HttpServlet {
                     dispacher.forward(request, response);
                 }
             }
-        } catch (SQLException ex) {
+        } catch (Exception ex) {
             ex.printStackTrace();
         }
     }

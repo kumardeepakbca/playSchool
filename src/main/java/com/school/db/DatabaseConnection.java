@@ -23,7 +23,7 @@ public class DatabaseConnection {
     public DatabaseConnection() {
         try {
             properties = new Properties();
-            InputStream konfigurasi = getClass().getResourceAsStream("/org/jasoet/db/config.properties");
+            InputStream konfigurasi = getClass().getResourceAsStream("/com/school/db/config.properties");
             properties.load(konfigurasi);
 
             Class.forName(properties.getProperty("jdbc.driver")).newInstance();
