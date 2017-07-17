@@ -16,6 +16,16 @@
         <servlet-name>RegistrationServlet</servlet-name>
         <url-pattern>/registration</url-pattern>
     </servlet-mapping>
+    
+      <servlet>
+        <servlet-name>LogoutServlet</servlet-name>
+        <servlet-class>com.school.servlet.LogoutServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>LogoutServlet</servlet-name>
+        <url-pattern>/logout</url-pattern>
+    </servlet-mapping>
+    
     <session-config>
         <session-timeout>
             30

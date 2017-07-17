@@ -4,13 +4,17 @@
  */
 package com.school.dao;
 
+import java.sql.SQLException;
+
+import com.school.model.User;
+
 
 /**
  *
  * @author Deepak
  */
 public interface UserDAO {
-
+	 public void insert(User u) throws SQLException;
    /* public List<MataKuliah> getAll() throws SQLException;
 
     public List<MataKuliah> getByNama(String nama) throws SQLException;

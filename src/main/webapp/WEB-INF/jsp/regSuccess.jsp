@@ -282,7 +282,11 @@ tr.highlight td{
       <div class="flt rp_block" style="margin-left:150px;"> <img src="images/rp_topcorn.gif" width="560" height="14" alt="" class="flt1 rp_topcornn" />
         <div class="flt1 rp_inner">
         
-
+        Regustration successful.Activation link send on your email id.
+  
+</div>
+</div>     
+        
         
         
         

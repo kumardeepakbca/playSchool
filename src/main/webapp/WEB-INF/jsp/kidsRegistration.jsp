@@ -282,7 +282,106 @@ tr.highlight td{
       <div class="flt rp_block" style="margin-left:150px;"> <img src="images/rp_topcorn.gif" width="560" height="14" alt="" class="flt1 rp_topcornn" />
         <div class="flt1 rp_inner">
         
+        
 
+
+<div class="form_table">
+
+<div class="clear"></div>
+
+
+<div class="clear"></div>
+
+<div id="q2" class="q full_width">
+<a class="item_anchor" name="ItemAnchor1"></a>
+<div class="segment_header" style="width:auto;text-align:Left;"><h1 style="font-size:18px;font-family:'Lato',sans-serif;padding:20px 1em ;">Registration form</h1></div>
+</div>
+
+<div class="clear"></div>
+
+<div id="q3" class="q required">
+<a class="item_anchor" name="ItemAnchor2"></a>
+<label class="question top_question" for="RESULT_TextField-2">Name&nbsp;<b class="icon_required" style="color:#FF0000">*</b></label>
+<input type="text" name="RESULT_TextField-2" class="text_field" id="RESULT_TextField-2"  size="36" maxlength="100" value="" />
+</div>
+<div id="q9" class="q required">
+<a class="item_anchor" name="ItemAnchor3"></a>
+<label class="question top_question" for="RESULT_TextField-3">Email Address&nbsp;<b class="icon_required" style="color:#FF0000">*</b></label>
+<input type="email" name="RESULT_TextField-3" class="text_field" id="RESULT_TextField-3"  size="36" maxlength="255" value="" />
+</div>
+
+<div class="clear"></div>
+
+<div id="q4" class="q required">
+<a class="item_anchor" name="ItemAnchor4"></a>
+<label class="question top_question" for="RESULT_TextField-4">Address&nbsp;<b class="icon_required" style="color:#FF0000">*</b></label>
+<input type="text" name="RESULT_TextField-4" class="text_field" id="RESULT_TextField-4"  size="36" maxlength="255" value="" />
+</div>
+<div id="q5" class="q required">
+<a class="item_anchor" name="ItemAnchor5"></a>
+<label class="question top_question" for="RESULT_TextField-5">City&nbsp;<b class="icon_required" style="color:#FF0000">*</b></label>
+<input type="text" name="RESULT_TextField-5" class="text_field" id="RESULT_TextField-5"  size="36" maxlength="255" value="" />
+</div>
+
+<div class="clear"></div>
+
+<div id="q6" class="q required">
+<a class="item_anchor" name="ItemAnchor6"></a>
+<label class="question top_question" for="RESULT_TextField-6">State&nbsp;<b class="icon_required" style="color:#FF0000">*</b></label>
+<input type="text" name="RESULT_TextField-6" class="text_field" id="RESULT_TextField-6"  size="36" maxlength="255" value="" />
+</div>
+<div id="q7" class="q required">
+<a class="item_anchor" name="ItemAnchor7"></a>
+<label class="question top_question" for="RESULT_TextField-7">Zip&nbsp;<b class="icon_required" style="color:#FF0000">*</b></label>
+<input type="text" name="RESULT_TextField-7" class="text_field" id="RESULT_TextField-7"  size="36" maxlength="255" value="" />
+</div>
+
+<div class="clear"></div>
+
+<div id="q8" class="q required">
+<a class="item_anchor" name="ItemAnchor8"></a>
+<label class="question top_question" for="RESULT_TextField-8">Phone&nbsp;<b class="icon_required" style="color:#FF0000">*</b></label>
+<input type="text" name="RESULT_TextField-8" class="text_field" id="RESULT_TextField-8"  size="36" maxlength="255" value="" />
+</div>
+<div id="q31" class="q required">
+<a class="item_anchor" name="ItemAnchor9"></a>
+<label class="question top_question" for="RESULT_TextField-9">Date of Birth&nbsp;<b class="icon_required" style="color:#FF0000">*</b></label>
+<input type="text" name="RESULT_TextField-9" class="text_field calendar_field"  size="32" maxlength="10" datemax="" datemin="" value="" date="mm-dd-yy" id="datepicker" />
+
+</div>
+
+<div class="clear"></div>
+
+<div id="q11" class="q required">
+<a class="item_anchor" name="ItemAnchor10"></a>
+<span class="question top_question">Gender&nbsp;<b class="icon_required" style="color:#FF0000">*</b></span>
+<table class="inline_grid">
+<tr>
+<td><input type="radio" name="RESULT_RadioButton-10" class="multiple_choice" id="RESULT_RadioButton-10_0" value="Radio-0" /><label for="RESULT_RadioButton-10_0" >Male</label></td>
+<td><input type="radio" name="RESULT_RadioButton-10" class="multiple_choice" id="RESULT_RadioButton-10_1" value="Radio-1" /><label for="RESULT_RadioButton-10_1" >Female</label></td>
+</tr>
+</table>
+</div>
+<div id="q13" class="q required">
+<a class="item_anchor" name="ItemAnchor11"></a>
+<label class="question top_question" for="RESULT_RadioButton-11">T-Shirt Size&nbsp;<b class="icon_required" style="color:#FF0000">*</b></label>
+<select id="RESULT_RadioButton-11" name="RESULT_RadioButton-11" class="drop_down">
+<option></option>
+<option value="Radio-0">Small</option>
+<option value="Radio-1">Medium</option>
+<option value="Radio-2">Large</option>
+<option value="Radio-3">Extra Large</option>
+</select>
+</div>
+<div class="clear"></div>
+
+</div>
+   <div class="outside_container">
+<div class="buttons_reverse">
+<input id="FSsubmit" class="submit_button" name="Submit" value="Submit" type="submit">
+</div>
+</div>     
+        
         
         
         

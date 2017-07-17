@@ -14,14 +14,15 @@
   <div id="cpblock">
     <div class="flt1 cpinner">
       <div class="flt lp_block"> <img src="images/lp_imgpair.jpg" width="51" height="37" alt="" class="flt1 lp_imgpair" /> <span class="flt lp_txtmem">member <span style="color:#2C3E46;">login</span></span><br />
+        <form action="login" method="post" id="loginform"/>
         <span class="flt1 lp_txtlog">Email ID</span>
         <input name="username" type="text" class="flt lp_textbox" />
         <br />
         <span class="flt1 lp_txtlog2">Password</span>
         <input name="password" type="password" class="flt lp_textbox2" />
-        <a href="#" class="flt lp_arrow"><img src="images/lp_arrow.gif" width="24" height="20" alt="" /></a>
-		 <span class="flt1 lp_txtlog" style="float: left;padding-left: 100px;width: 100%;cursor:pointer;">Register Yourself</span>
-		
+        <a href="#" class="flt lp_arrow"><img src="images/lp_arrow.gif" width="24" height="20" alt="" onclick="formSubmit()" /></a>
+		 <span class="flt1 lp_txtlog" style="float: left;padding-left: 100px;width: 100%;cursor:pointer;" onclick="window.location.href='registration'">Register Yourself</span>
+		</form>
 		<img src="images/lp_boxcorn1.gif" width="258" height="12" alt="" class="flt1 lp_boxtop1" />
         <div class="flt1 lp_boxbg"> <span class="flt1 lp_txtour">our solutions</span><br />
           <span class="flt1 lp_boxtxt">You may conduct your financial operations in one of our branches. has employed the top security for various online transactions. Though online banking fraud is widely prevalent.ity for various online transactions. </span><br />
@@ -48,4 +49,9 @@
   <jsp:include page="/WEB-INF/jsp/layouts/footer.jsp"/>
  
 </body>
+<script>
+function formSubmit() {
+  document.getElementById("loginform").submit();
+}
+</script>
 </html>

@@ -15,6 +15,7 @@ img{border:0px;
 .topblock{width:1000px; height:367px; background:url(../images/tp_backgr.jpg) no-repeat}
 .tp_txtplay{ font:36px/40px Trebuchet MS; color:#ffffff; margin:188px 0px 0px 94px; text-decoration:none;}	
 .tp_txtcss{ font:11px/14px tahoma; color:#ffffff; margin:0px 0px 0px 198px;}
+.tp_txtcss_usr{ font:11px/14px tahoma; color:#ffffff; margin:35px 0px 0px 700px;}
 .tp_home{ font:bold italic 17px/14px georgia; color:#ffffff; margin:0px; text-decoration:none;}
 .tp_home2{ font:bold italic 17px/14px georgia; color:#ffffff; margin-left:152px; text-decoration:none;}
 .tp_pipe{display:inline; margin:0px 34px 0px 34px;}	

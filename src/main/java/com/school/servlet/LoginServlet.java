@@ -9,6 +9,7 @@ import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
 import com.school.dao.UserDAO;
 import com.school.dao.impl.UserDAOImpl;
@@ -20,7 +21,7 @@ import com.school.model.User;
  */
 public class LoginServlet extends HttpServlet {
 
-    private String list = "/WEB-INF/jsp/dosen/list.jsp";
+    private String index = "/index.jsp";
     private String home = "/WEB-INF/jsp/homepage.jsp";
     private UserDAO userDAO;
 
@@ -36,42 +37,8 @@ public class LoginServlet extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         try {
-
-            String action = request.getParameter("action");
-            if (action != null) {
-                if (action.equalsIgnoreCase("show")) {
-
-                    String niy = request.getParameter("niy");
-
-                    niy = (niy != null) ? niy : "";
-
-                    User dosen = null;
-
-                    request.setAttribute("data", dosen);
-
-                    RequestDispatcher dispacher = request.getRequestDispatcher(home);
-                    dispacher.forward(request, response);
-
-                }
-            } else {
-                String nama = request.getParameter("nama");
-                if (nama != null) {
-
-                    List<User> data =null;
-
-                    request.setAttribute("data", data);
-
-                    RequestDispatcher dispacher = request.getRequestDispatcher(list);
-                    dispacher.forward(request, response);
-                } else {
-                    List<User> data = null;
-
-                    request.setAttribute("data", data);
-
-                    RequestDispatcher dispacher = request.getRequestDispatcher(list);
-                    dispacher.forward(request, response);
-                }
-            }
+            RequestDispatcher dispacher = request.getRequestDispatcher(home);
+            dispacher.forward(request, response);
         } catch (Exception ex) {
             ex.printStackTrace();
         }
@@ -79,7 +46,15 @@ public class LoginServlet extends HttpServlet {
 
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        super.doPost(req, resp);
+    	System.out.println("login dopost>>>>>>>>>>>>>>>>>>>>>>>>>>>"); 
+    	String username=req.getParameter("username");
+    	String password=req.getParameter("password");
+    	System.out.println("username==="+username);
+    	System.out.println("password==="+password);
+        HttpSession session=req.getSession();  
+        session.setAttribute("username",username);  
+    	RequestDispatcher dispacher = req.getRequestDispatcher(home);
+        dispacher.forward(req, resp);
     }
 
 
