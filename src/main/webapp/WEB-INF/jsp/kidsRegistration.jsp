@@ -1,410 +1,481 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-gb" lang="en-gb" dir="ltr">
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8"></meta>
 <head>
-<title>Manage Child</title>
-<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
-<link rel="stylesheet" type="text/css" href="css/jquery-ui.css" />
-<link rel="stylesheet" type="text/css" href="css/screen7.css" />
-<link rel="stylesheet" type="text/css" href="css/style.css" />
-<script type="text/javascript" src="js/jquery.min.js"></script>
-<script type="text/javascript" src="js/form7.js"></script>
-<script type="text/javascript" src="js/jquery-ui.min.js"></script>
-<style type="text/css" media="all">
+<meta name="robots" content="index, follow"></meta>
+<meta name="keywords" content=""></meta>
+<meta name="description" content=""></meta>
+<meta name="generator" content=""></meta>
+<title>President's Message</title>
 
-.form_table{
-	width: 550px;
-	margin-left: auto;
-	margin-right: auto;
-	border-radius: 4px;
-	color: #575B66;
-	overflow: hidden;
-	box-shadow: none;
-	background-position: 50% 50%;
-}
+<link rel="stylesheet" href="css/style.css" type="text/css"  async></link>
 
-.form_table a{
-	color: #0D47A1;
-}
-
-.outside a{
-	color: #0D47A1;
-}
-
-.form_table a:visited{
-	color: #0D47A1;
-}
-
-.outside a:visited{
-	color: #0D47A1;
-}
-
-.segment_header{
-	width: auto;
-	margin: 1px;
-	color: #FFFFFF;
-	background: #4C6BB5;
-	background-size: cover;
-	background-repeat: repeat;
-	background-position: 50% 50%;
-	border-radius: 2px;
-}
-
-.segment_header h1{
-	border-radius: 2px;
-	padding: 20px 10px;
-	font-family: 'Lato',sans-serif;
-}
-
-.q{
-	padding: 10px;
-	margin-bottom: 10px;
-	margin-left: 10px;
-	float: left;
-	display: block;
-}
-
-.q .question{
-	font-weight: bold;
-}
-
-.q .left_question_first{
-	width: 15em;
-}
-
-.required .icon{
-	background-image: none;
-	background-position: left;
-	background-repeat: no-repeat;
-	font-size: 13px;
-	padding-left: 14px;
-}
-
-.q .text_field{
-	background: #FAFBFD;
-	border: 1px solid #D8E1F5;
-	border-radius: 2px;
-	border-width: 1px;
-	color: #575B66;
-	font-family: 'Lato',sans-serif;
-	font-size: 13px;
-	margin: 1px 0;
-	padding: 10px;
-}
-
-.q .file_upload{
-	background: #FAFBFD;
-	border: 1px solid #D8E1F5;
-	border-radius: 2px;
-	border-width: 1px;
-	color: #575B66;
-	font-family: 'Lato',sans-serif;
-	font-size: 13px;
-	margin-top: 1px;
-	padding: 10px;
-}
-
-.q .file_upload_button{
-	margin-top: 2px;
-}
-
-.q .inline_grid td{
-	padding: 5px;
-	vertical-align: baseline;
-}
-
-.q .drop_down{
-	background: #FAFBFD;
-	border: 1px solid #D8E1F5;
-	border-radius: 2px;
-	border-width: 1px;
-	color: #575B66;
-	font-family: 'Lato',sans-serif;
-	font-size: 13px;
-	margin: 1px 0;
-	padding: 9px;
-}
-
-.q .matrix th{
-	color: #7280A1;
-	background: #EEF2FA;
-	padding: 5px;
-	font-weight: bold;
-	text-align: center;
-	vertical-align: bottom;
-}
-
-.q .matrix td{
-	padding: 5px;
-	text-align: center;
-	white-space: nowrap;
-	height: 26px;
-	border-bottom: 1px solid #D8E1F5;
-	border-top: 1px solid #D8E1F5;
-}
-
-.q .matrix td.question{
-	border-right: 1px solid #D8E1F5;
-	font-weight: normal;
-}
-
-.q .matrix .multi_scale_sub th{
-	font-weight: normal;
-	border-top: 1px solid #D8E1F5 !important;
-	background: #FAFBFD;
-}
-
-.q .matrix .multi_scale_break{
-	border-right: 1px solid #D8E1F5;
-}
-
-.q .matrix_row_dark td{
-	color: #575B66;
-	background: #FAFBFD;
-}
-
-.q .matrix_row_dark td.question{
-	color: #575B66;
-	background: #FAFBFD;
-}
-
-.q .matrix_row_light td{
-	color: #575B66;
-	background: #FFFFFF;
-}
-
-.q .matrix_row_light td.question{
-	color: #575B66;
-	background: #FFFFFF;
-}
-
-.q .rating_ranking td{
-	padding: 5px;
-}
-
-.q .scroller{
-	border: 1px solid #CCCCCC;
-}
-
-.highlight{
-	background: #FFF9DF   !important;
-}
-
-tr.highlight td{
-	background: #FFF9DF   !important;
-}
-
-.outside{
-	color: #575B66;
-}
-
-.outside_container{
-	width: 650px;
-	padding: 1em 0;
-	margin-left: auto;
-	margin-right: auto;
-	text-align: center;
-	color: #575B66;
-}
-
-.outside_container .submit_button{
-	color: #FFFFFF !important;
-	background: #E8BC63;
-	background-size: auto;
-	border-style: none;
-	border-width: 1px;
-	border-color: #FFFFFF;
-	border-radius: 4px;
-	text-align: center;
-	font-family: 'Lato',sans-serif;
-	font-size: 13px;
-	font-weight: bold;
-	min-width: 30%;
-	padding: 16px 20px;
-	text-transform: uppercase;
-	box-shadow: none;
-}
-
-.outside_container .submit_button:hover{
-	background: #E8A963;
-	border-color: #BBBBBB;
-	background-size: auto;
-}
-
-.progressBarWrapper{
-	border-radius: 4px;
-	background: #FFFFFF;
-	background-size: cover;
-	border-color: #CCCCCC;
-}
-
-.progressBarBack{
-	color: #FFFFFF;
-	background-color: #E8BC63;
-}
-
-.progressBarFront{
-	color: #575B66;
-}
-
-.ui-widget{
-	font-family: 'Lato',sans-serif;
-}
-
-.invalid{
-	background: #FDF1F0;
-}
-
-.invalid .invalid_message{
-	color: #EC756B;
-	background: #FDF1F0;
-	border: 1px solid #EC756B;
-	border-radius: 2px;
-}
-
-.form_table.invalid{
-	border: 2px solid #EC756B;
-}
-
-.invalid .matrix .invalid_row{
-	background: #FDF1F0;
-}
-
-</style>
 </head>
 <body>
-<!-- top panel starts here -->
-<div style="margin:auto; width:1000px;">
- <jsp:include page="/WEB-INF/jsp/layouts/header.jsp"/>
-  <!-- top panel ends here -->
-  <!-- content panel starts here11 -->
-  <div id="cpblock">
-    <div class="flt1 cpinner">
-      <div class="flt rp_block" style="margin-left:150px;"> <img src="images/rp_topcorn.gif" width="560" height="14" alt="" class="flt1 rp_topcornn" />
-        <div class="flt1 rp_inner">
-        
-        
+<div id="main_wrapper">
 
+  <div id="wrapper">
+  
+    <!-- Header Starts -->
+    <head>
+<link rel="stylesheet" href="css/superfish.css" type="text/css">
+</link>
+<!--<script type="text/javascript" src="js/mootools.js"></script>-->
+<!--<script type="text/javascript" src="js/caption.js"></script>-->
+<script type="text/javascript" src="js/phocagalleryslideshow.js"></script>
+<script type="text/javascript" src="js/acymailing_module.js"></script>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/jquery01.js"></script>
+<script type="text/javascript" src="js/superfish.js"></script>
+<script type="text/javascript">
+/*
+					var acymailing = Array();
+					acymailing['NAMECAPTION'] = 'Name';
+					acymailing['NAME_MISSING'] = 'Please enter your name';
+					acymailing['EMAILCAPTION'] = 'E-mail';
+					acymailing['VALID_EMAIL'] = 'Please enter a valid e-mail address';
+					acymailing['ACCEPT_TERMS'] = 'Please check the Terms and Conditions';
+					acymailing['CAPTCHA_MISSING'] = 'Please enter the security code displayed in the image';
+			*/
+jQuery.noConflict();
+jQuery(function($){ $("ul.sf-menu").superfish({hoverClass:'sfHover', pathClass:'active', pathLevels:0, delay:800, animation:{opacity:'show'}, speed:'def', autoArrows:1, dropShadows:1}) });
+jQuery.event.special.hover.delay = 100;
+jQuery.event.special.hover.speed = 100;
 
-<div class="form_table">
+  </script>
+<script type="text/javascript" src="js/md_style.js"></script>
+<script type="text/javascript" src="js/jquery-1.2.6.min.js"></script>
+<script type="text/javascript" src="js/jquery-easing-1.3.pack.js"></script>
+<script type="text/javascript" src="js/jquery-easing-compatibility.1.2.pack.js"></script>
+<script type="text/javascript" src="js/coda-slider.1.1.1.pack.js"></script>
+<script type="text/javascript">
+	var theInt = null;
+		var $crosslink, $navthumb;
+		var curclicked = 0;
+		
+		theInterval = function(cur){
+			clearInterval(theInt);
+			
+			if( typeof cur != 'undefined' )
+				curclicked = cur;
+			
+			$crosslink.removeClass("active-thumb");
+			$navthumb.eq(curclicked).parent().addClass("active-thumb");
+				$(".stripNav ul li a").eq(curclicked).trigger('click');
+			
+			theInt = setInterval(function(){
+				$crosslink.removeClass("active-thumb");
+				$navthumb.eq(curclicked).parent().addClass("active-thumb");
+				$(".stripNav ul li a").eq(curclicked).trigger('click');
+				curclicked++;
+				if( 6 == curclicked )
+					curclicked = 0;
+				
+			}, 3000);
+		};
+		
+		;(function($){
+			
+			$("main-photo-slider").codaSlider();
+			
+			$navthumb = $(".nav-thumb");
+			$crosslink = $(".cross-link");
+			
+			$navthumb
+			.click(function() {
+				var $this = $(this);
+				theInterval($this.parent().attr('href').slice(1) - 1);
+				return false;
+			});
+			
+			theInterval();
+		})(jQuery);
+		
+		
+		
+	</script>
+<!-- Login Script Starts -->
+<!--<script type="text/javascript" src="js/jquery-1.2.6.min.js"></script>-->
+<script type="text/javascript">
+$(document).ready(function(){
 
-<div class="clear"></div>
+	//Hide (Collapse) the toggle containers on load
+	$(".toggle_container").hide(); 
 
+	//Switch the "Open" and "Close" state per click then slide up/down (depending on open/close state)
+	$("div.trigger").click(function(){
+		$(this).toggleClass("active").next().slideToggle("slow");
+	});
 
-<div class="clear"></div>
+});
+</script>
+<!-- Login Script Ends -->
+<!-- Donate Script Starts -->
+<!--<script type="text/javascript" src="js/jquery-1.2.6.min.js"></script>-->
+<script type="text/javascript">
+$(document).ready(function(){
 
-<div id="q2" class="q full_width">
-<a class="item_anchor" name="ItemAnchor1"></a>
-<div class="segment_header" style="width:auto;text-align:Left;"><h1 style="font-size:18px;font-family:'Lato',sans-serif;padding:20px 1em ;">Registration form</h1></div>
-</div>
+	//Hide (Collapse) the toggle containers on load
+	$(".toggle_containerdonate").hide(); 
 
-<div class="clear"></div>
+	//Switch the "Open" and "Close" state per click then slide up/down (depending on open/close state)
+	$("div.triggerdonate").click(function(){
+		$(this).toggleClass("active").next().slideToggle("slow");
+	});
 
-<div id="q3" class="q required">
-<a class="item_anchor" name="ItemAnchor2"></a>
-<label class="question top_question" for="RESULT_TextField-2">Name&nbsp;<b class="icon_required" style="color:#FF0000">*</b></label>
-<input type="text" name="RESULT_TextField-2" class="text_field" id="RESULT_TextField-2"  size="36" maxlength="100" value="" />
-</div>
-<div id="q9" class="q required">
-<a class="item_anchor" name="ItemAnchor3"></a>
-<label class="question top_question" for="RESULT_TextField-3">Email Address&nbsp;<b class="icon_required" style="color:#FF0000">*</b></label>
-<input type="email" name="RESULT_TextField-3" class="text_field" id="RESULT_TextField-3"  size="36" maxlength="255" value="" />
-</div>
-
-<div class="clear"></div>
-
-<div id="q4" class="q required">
-<a class="item_anchor" name="ItemAnchor4"></a>
-<label class="question top_question" for="RESULT_TextField-4">Address&nbsp;<b class="icon_required" style="color:#FF0000">*</b></label>
-<input type="text" name="RESULT_TextField-4" class="text_field" id="RESULT_TextField-4"  size="36" maxlength="255" value="" />
-</div>
-<div id="q5" class="q required">
-<a class="item_anchor" name="ItemAnchor5"></a>
-<label class="question top_question" for="RESULT_TextField-5">City&nbsp;<b class="icon_required" style="color:#FF0000">*</b></label>
-<input type="text" name="RESULT_TextField-5" class="text_field" id="RESULT_TextField-5"  size="36" maxlength="255" value="" />
-</div>
-
-<div class="clear"></div>
-
-<div id="q6" class="q required">
-<a class="item_anchor" name="ItemAnchor6"></a>
-<label class="question top_question" for="RESULT_TextField-6">State&nbsp;<b class="icon_required" style="color:#FF0000">*</b></label>
-<input type="text" name="RESULT_TextField-6" class="text_field" id="RESULT_TextField-6"  size="36" maxlength="255" value="" />
-</div>
-<div id="q7" class="q required">
-<a class="item_anchor" name="ItemAnchor7"></a>
-<label class="question top_question" for="RESULT_TextField-7">Zip&nbsp;<b class="icon_required" style="color:#FF0000">*</b></label>
-<input type="text" name="RESULT_TextField-7" class="text_field" id="RESULT_TextField-7"  size="36" maxlength="255" value="" />
-</div>
-
-<div class="clear"></div>
-
-<div id="q8" class="q required">
-<a class="item_anchor" name="ItemAnchor8"></a>
-<label class="question top_question" for="RESULT_TextField-8">Phone&nbsp;<b class="icon_required" style="color:#FF0000">*</b></label>
-<input type="text" name="RESULT_TextField-8" class="text_field" id="RESULT_TextField-8"  size="36" maxlength="255" value="" />
-</div>
-<div id="q31" class="q required">
-<a class="item_anchor" name="ItemAnchor9"></a>
-<label class="question top_question" for="RESULT_TextField-9">Date of Birth&nbsp;<b class="icon_required" style="color:#FF0000">*</b></label>
-<input type="text" name="RESULT_TextField-9" class="text_field calendar_field"  size="32" maxlength="10" datemax="" datemin="" value="" date="mm-dd-yy" id="datepicker" />
-
-</div>
-
-<div class="clear"></div>
-
-<div id="q11" class="q required">
-<a class="item_anchor" name="ItemAnchor10"></a>
-<span class="question top_question">Gender&nbsp;<b class="icon_required" style="color:#FF0000">*</b></span>
-<table class="inline_grid">
-<tr>
-<td><input type="radio" name="RESULT_RadioButton-10" class="multiple_choice" id="RESULT_RadioButton-10_0" value="Radio-0" /><label for="RESULT_RadioButton-10_0" >Male</label></td>
-<td><input type="radio" name="RESULT_RadioButton-10" class="multiple_choice" id="RESULT_RadioButton-10_1" value="Radio-1" /><label for="RESULT_RadioButton-10_1" >Female</label></td>
-</tr>
-</table>
-</div>
-<div id="q13" class="q required">
-<a class="item_anchor" name="ItemAnchor11"></a>
-<label class="question top_question" for="RESULT_RadioButton-11">T-Shirt Size&nbsp;<b class="icon_required" style="color:#FF0000">*</b></label>
-<select id="RESULT_RadioButton-11" name="RESULT_RadioButton-11" class="drop_down">
-<option></option>
-<option value="Radio-0">Small</option>
-<option value="Radio-1">Medium</option>
-<option value="Radio-2">Large</option>
-<option value="Radio-3">Extra Large</option>
-</select>
-</div>
-<div class="clear"></div>
-
-</div>
-   <div class="outside_container">
-<div class="buttons_reverse">
-<input id="FSsubmit" class="submit_button" name="Submit" value="Submit" type="submit">
-</div>
-</div>     
-        
-        
-        
-        
-        
-         </div>
-        <img src="images/rp_bottcorn.gif" width="560" height="14" alt="" class="flt1" /> </div>
-    </div>
-    <img src="images/cp_bottcorn.gif" width="898" height="20" alt="" class="flt1" /> </div>
-  <!-- content panel ends here -->
-  <!-- footer panel starts here11 -->
-  <jsp:include page="/WEB-INF/jsp/layouts/footer.jsp"/>
- 
-</body>
-<script>
-$(function() {
-        $( "#datepicker" ).datepicker({
-            dateFormat : 'mm/dd/yy',
-            changeMonth : true,
-            changeYear : true,
-            yearRange: '-100y:c+nn',
-            maxDate: '-1d'
-        });
-    });
+});
+</script>
+<script type="text/javascript">
+function validate()
+	{
+	
+		if(document.adminForm.urname.value=="")
+		{
+			alert("Please Enter Your Name");
+			document.adminForm.urname.focus();
+			return false;
+		}
+		else if(document.adminForm.urname.value!="")
+		{
+			var spclChars = "!#$%^&*()/\|><'=+"; 
+			var content = document.adminForm.urname.value; 
+			for (var i = 0; i < content.length; i++) 
+			{ 
+			if (spclChars.indexOf(content.charAt(i)) != -1) 
+			{ 
+			alert ("Special characters are not allowed."); 
+			document.adminForm.urname.focus(); 
+			return false; 
+			} 
+			} 
+		}		
+		
+		var emailRegEx = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+	 		str = document.adminForm.email.value;
+		if(!str.match(emailRegEx)) 
+		{
+				alert("Please Enter a Valid Email address");
+				document.adminForm.email.focus();
+				return false;
+		}
+		if(document.adminForm.email.value!="")
+		{
+			var spclChars = "!#$%^&*()/\|><'=+"; 
+			var content = document.adminForm.email.value; 
+			for (var i = 0; i < content.length; i++) 
+			{ 
+			if (spclChars.indexOf(content.charAt(i)) != -1) 
+			{ 
+			alert ("Special characters are not allowed."); 
+			document.adminForm.email.focus(); 
+			return false; 
+			} 
+			} 
+		}
+				
+		if(document.adminForm.username.value=="")
+		{
+			alert("Please Enter User Name");
+			document.adminForm.username.focus();
+			return false;
+		}
+		if(document.adminForm.username.value!="")
+		{
+			var spclChars = "!#$%^&*()/\|><'=+"; 
+			var content = document.adminForm.username.value; 
+			for (var i = 0; i < content.length; i++) 
+			{ 
+			if (spclChars.indexOf(content.charAt(i)) != -1) 
+			{ 
+			alert ("Special characters are not allowed."); 
+			document.adminForm.username.focus(); 
+			return false; 
+			} 
+			} 
+		}
+		
+		if(document.adminForm.password.value=="")
+		{
+			alert("Please Enter Your Password");
+			document.adminForm.password.focus();
+			return false;
+		}
+		if(document.adminForm.password__verify.value=="")
+		{
+			alert("Please Enter Verify Password");
+			document.adminForm.password__verify.focus();
+			return false;
+		}
+		if(document.adminForm.password__verify.value!="" && (document.adminForm.password.value!=document.adminForm.password__verify.value))
+		{
+			alert("Password & Verify Password must be same");
+			document.adminForm.password__verify.focus();
+			return false;
+		
+		}
+		
+	}
 
 </script>
+<!-- Donate Script Ends -->
+<!-- Content Slider Starts-->
+<link href="css/content-slider.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/contentslider.js"></script>
+<script type="text/javascript" src="js/contentslider-jquery.min.js"></script>
+<script type="text/javascript" src="js/contentslider-superfish.js"></script>
+
+</head>
+<link rel="shortcut icon" href="/images/favicon.ico" />
+<jsp:include page="/WEB-INF/jsp/layouts/header.jsp"/>
+    <!-- Header Ends -->
+
+    <!-- Content Starts -->
+    <div class="content_wrapper_main">
+      <!-- Left Content Starts -->
+      <script type="text/javascript" src="js/flashnews.js"></script>
+<!--<script src="http://code.jquery.com/jquery-1.7.1.js" type="text/javascript"></script>-->
+<link rel="stylesheet" href="css/news-ticker.css" type="text/css"/>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<script type="text/javascript">
+//<![CDATA[
+$(window).load(function(){
+$("div.bannergroupslv div").sort(function(){
+return Math.random()*10 > 5 ? 1 : -1;
+}).each(function(){
+var $t = $(this);
+$t.appendTo( $t.parent() );
+});
+});//]]> 
+</script>
+
+
+<script language="javascript">
+
+
+</script>
+
+ <div class="left_container_main">
+        <div id="left">
+          
+          <div class="moduletable" >
+            <h3>Silver Sponsors</h3>
+            <div class="bannergroupslv">
+              <div class="banneritem"  style="text-align:center;"><a href="http://avanttax.com/" target="_blank"><img src="banners/webadmin1485314220Avanttax logo.jpg" alt="Banner" width="150" ></a>
+                <div class="clr"></div>
+              </div>
+                          <div class="banneritem"  style="text-align:center;"><a href="" target="_blank"><img src="banners/1454210160webadmin1453173360Peackock_logo_scl.jpg" alt="Banner" width="150" ></a>
+                <div class="clr"></div>
+              </div>
+                          <div class="banneritem"  style="text-align:center;"><a href="" target="_blank"><img src="banners/admin1420946100Omega_Logo-edit-by-ppm_20140811.jpg" alt="Banner" width="150" ></a>
+                <div class="clr"></div>
+              </div>
+            
+            </div>
+          </div>
+          
+        </div>
+      </div>      <!-- Left Content Ends -->
+      <!-- Middle Content Starts -->
+    
+       <div class="middle_container_main">
+	          <div class="middle_contentbox_main">		
+          <div class="component_heading">Kids Registration</div>
+          <div class="content_box_main">
+            <div class="description_box_main description_txt">
+              <div class="cb_comp_inner cbHtmlEdit cbRegistration">
+                  <div id="cbIconsTop"><span class='cbFieldIconsLabels'> <img src='images/site/icon-16-required.png' width='16' height='16' alt='* This Field is required' title='This Field is required' /> Required field | <img src='images/site/icon-16-profile-yes.png' width='16' height='16' alt='This Field IS visible on profile' title='This Field IS visible on profile' /> Field visible on your profile | <img src='images/site/icon-16-profile-no.png' width='16' height='16' alt='This Field IS NOT visible on profile' title='This Field IS NOT visible on profile' /> Field <strong>not</strong> visible on profile | <img src="images/site/icon-16-info.png"  alt="Information for: ? : Field description: Move mouse over icon" title="" onMouseOver="return overlib('Field description: Move mouse over icon', CAPTION, '?');" onMouseOut="return nd();" /> Information: Point mouse to icon</span></div>               
+                
+                  <form  method="post" id="cbcheckedadminForm" name="adminForm"  onSubmit="return validate();" action="registration">
+                   
+                    <table class="contentpane" id="registrationTable">
+                      <tr class="sectiontableentry1 cbft_predefined" id="cbfr_41">
+                        <td class="titleCell"><label for="name" title="Name: Please enter your full name.">Kids name:</label></td>
+                        <td class="fieldCell" id="cbfv_41"><input type="text" name="urname" id="urname" value=""  mosReq="1" mosLabel="Name" size="25" class="required inputbox" title="Name: Please enter your full name." /></td>
+                      </tr>
+					  <tr class="sectiontableentry1 cbft_predefined" id="cbfr_41">
+                        <td class="titleCell"><label for="name" title="Name: Please enter your full name.">School name:</label></td>
+                        <td class="fieldCell" id="cbfv_41"><input type="text" name="urname" id="urname" value=""  mosReq="1" mosLabel="Name" size="25" class="required inputbox" title="Name: Please enter your full name." /></td>
+                      </tr>
+                     <tr class="sectiontableentry1 cbft_predefined" id="cbfr_41">
+                        <td class="titleCell"><label for="name" title="Name: Please enter your full name.">Class:</label></td>
+                        <td class="fieldCell" id="cbfv_41"><input type="text" name="urname" id="urname" value=""  mosReq="1" mosLabel="Name" size="25" class="required inputbox" title="Name: Please enter your full name." /></td>
+                      </tr>
+                    <tr class="sectiontableentry1 cbft_predefined" id="cbfr_41">
+                        <td class="titleCell"><label for="name" title="Name: Please enter your full name.">Date of birth:</label></td>
+                        <td class="fieldCell" id="cbfv_41"><input type="text" name="urname" id="urname" value=""  mosReq="1" mosLabel="Name" size="25" class="required inputbox" title="Name: Please enter your full name." /></td>
+                      </tr>
+                     
+</table>
+
+						
+						
+						</td>
+                      </tr>
+                     
+					  					  <!--  reg pic begins -->
+					  <!--<tr>
+                <td align="center" colspan="2" class="note_txt"><font color="#FF0000">** Note </font> : Only JPG/JPEG Files Are Supported </td>
+              </tr>-->
+					 
+				
+             
+					
+                      <tr>
+                        <td colspan="2" ><table width="83%">
+                          <tr><td align="right"><input type="submit" value="Register" name="Register" id="Register" class="button_bg" /></td></tr></table></td>
+                      </tr>
+					  <tr><td colspan="2" height="30" ></td></tr>
+                    </table>
+                  </form>
+                  <div id="cbIconsBottom"></div>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Middle Content Ends -->
+      <!-- Right Content Starts -->
+      <!--<script type="text/javascript" src="js/jquery1.js"> </script>-->
+
+<script type="text/javascript" src="js/flashnews.js"></script>
+<script src="http://code.jquery.com/jquery-1.7.1.js" type="text/javascript"></script>
+<link rel="stylesheet" href="css/news-ticker.css" type="text/css"/>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<script type="text/javascript">
+//<![CDATA[
+//<![CDATA[
+$(window).load(function(){
+$("div.bannergroupdia div").sort(function(){
+return Math.random()*10 > 5 ? 1 : -1;
+}).each(function(){
+var $t = $(this);
+$t.appendTo( $t.parent() );
+});
+});
+$(window).load(function(){
+$("div.bannergroupplat div").sort(function(){
+return Math.random()*10 > 5 ? 1 : -1;
+}).each(function(){
+var $t = $(this);
+$t.appendTo( $t.parent() );
+});
+});//]]> 
+$(window).load(function(){
+$("div.bannergroupgol div").sort(function(){
+return Math.random()*10 > 5 ? 1 : -1;
+}).each(function(){
+var $t = $(this);
+$t.appendTo( $t.parent() );
+});
+});//]]> 
+$(window).load(function(){
+$("div.bannergroupslv div").sort(function(){
+return Math.random()*10 > 5 ? 1 : -1;
+}).each(function(){
+var $t = $(this);
+$t.appendTo( $t.parent() );
+});
+});//]]> 
+
+</script>
+
+<div class="right_container_main">
+        <div id="right">
+		
+		<!--  Right corner banner realated to Event Ticketing  begins-->
+        <!--<div class="moduletable"  >           	
+            <div class="bannergroupplat" >
+			
+              <div class="banneritem" ><a href="http://tantex.org/memberVerification.php?ev_id=351" target="_blank" ><img src="banners/ugaadi-Utsavaalu.jpg" alt="Banner"></a>
+                <div class="clr"></div>
+              </div>             
+            </div>
+          </div>-->		  
+		  
+		  <!--<div class="moduletable"  >
+           	
+            <div class="bannergroupplat" >
+			
+              <div class="banneritem" ><a href="http://tantex.org/memberVerification.php?ev_id=170" target="_blank"><img src="banners/season_pass_banner.jpg" alt="Banner"></a>
+                <div class="clr"></div>
+              </div>       
+             
+            </div>
+          </div>-->
+		  
+		  
+		  <!--  Right corner banner realated to Event Ticketing  ends-->
+		  
+          <div class="moduletable" id="platinum" >
+            <h3>Diamond Sponsors</h3>			
+            <div class="bannergroupdia" >
+			
+     
+             
+            </div>
+          </div>
+                    
+          
+          <div class="moduletable" id="platinum" >
+            <h3>Platinum Sponsors</h3>			
+            <div class="bannergroupplat" >
+			
+              <div class="banneritem" ><a href="http://www.mehtajewellery.com/" target="_blank"><img src="banners/webadmin1485746220mehh1scaled.jpg" alt="Banner"></a>
+                <div class="clr"></div>
+              </div>
+                          <div class="banneritem" ><a href="http://www.sdilogic.com" target="_blank"><img src="banners/webadmin1434510900SDILogic_web.jpg" alt="Banner"></a>
+                <div class="clr"></div>
+              </div>
+                          <div class="banneritem" ><a href="http://www.bawarchibiryanipoint.com/" target="_blank"><img src="banners/webadmin1493090220Bawarchi1.jpg" alt="Banner"></a>
+                <div class="clr"></div>
+              </div>
+                 
+             
+            </div>
+          </div>
+
+               <div class="moduletable" >
+            <h3>Gold Sponsors</h3>
+            <div class="bannergroupgol">
+			
+              <div class="banneritem"><a href="" target="_blank"><img src="banners/admin1420859700VikramJangam_Scaled.jpg" alt="Banner"></a>
+                <div class="clr"></div>
+              </div>
+                          <div class="banneritem"><a href="http://www.ourtaxcpa.com/" target="_blank"><img src="banners/admin1382238780b47_Vish Palepu_Other_150_50_with Border.jpg" alt="Banner"></a>
+                <div class="clr"></div>
+              </div>
+                          <div class="banneritem"><a href="http://www.mytaxfiler.com/" target="_blank"><img src="banners/webadmin1455246960Mytaxfiler Logo.jpg" alt="Banner"></a>
+                <div class="clr"></div>
+              </div>
+                          <div class="banneritem"><a href="http://www.pasandrestaurant.com/" target="_blank"><img src="banners/admin1365279180pasand_border-gold.jpg" alt="Banner"></a>
+                <div class="clr"></div>
+              </div>
+            
+            </div>
+          </div>
+        
+          
+        </div>
+      </div>      <!-- Right Content Ends -->
+    </div>
+    <!-- Content Ends -->
+    <!-- Footer Starts -->
+       <!-- Footer Ends -->
+  </div>
+</div>
+</body>
 </html>

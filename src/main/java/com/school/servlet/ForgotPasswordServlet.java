@@ -17,13 +17,13 @@ import com.school.model.User;
 /**
  * @author Deepak
  */
-public class RegistrationServlet extends HttpServlet {
+public class ForgotPasswordServlet extends HttpServlet {
 
-    private String registration = "/WEB-INF/jsp/memberreg.jsp";
+    private String forgotpassword = "/WEB-INF/jsp/forgotpassword.jsp";
     private String regSuccess = "/WEB-INF/jsp/regSuccess.jsp";
     private UserDAO userDAO;
 
-    public RegistrationServlet() {
+    public ForgotPasswordServlet() {
         try {
         	userDAO = new UserDAOImpl(DatabaseConnection.getInstance().getConnection());
         	System.out.println("Registration Servlet>>>>>>>>>>>>>>>>>>>>>>>>>>");
@@ -37,7 +37,7 @@ public class RegistrationServlet extends HttpServlet {
             throws ServletException, IOException {
         try {
         			System.out.println("Registration form method is callaing :----------------------");
-                    RequestDispatcher dispacher = request.getRequestDispatcher(registration);
+                    RequestDispatcher dispacher = request.getRequestDispatcher(forgotpassword);
                     dispacher.forward(request, response);
         } catch (Exception ex) {
             ex.printStackTrace();

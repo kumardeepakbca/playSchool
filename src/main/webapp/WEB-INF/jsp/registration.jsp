@@ -6,9 +6,11 @@
 <link rel="stylesheet" type="text/css" href="css/jquery-ui.css" />
 <link rel="stylesheet" type="text/css" href="css/screen7.css" />
 <link rel="stylesheet" type="text/css" href="css/style.css" />
+ <link href="css/menu.css" rel="stylesheet">
 <script type="text/javascript" src="js/jquery.min.js"></script>
 <script type="text/javascript" src="js/form7.js"></script>
 <script type="text/javascript" src="js/jquery-ui.min.js"></script>
+<script type="text/javascript" src="js/custom.js"></script>
 <style type="text/css" media="all">
 
 .form_table{
@@ -274,7 +276,7 @@ tr.highlight td{
 <body>
 <!-- top panel starts here -->
 <div style="margin:auto; width:1000px;">
- <jsp:include page="/WEB-INF/jsp/layouts/header.jsp"/>
+ <jsp:include page="/WEB-INF/jsp/layouts/homeHeader.jsp"/>
   <!-- top panel ends here -->
   <!-- content panel starts here11 -->
   <div id="cpblock">

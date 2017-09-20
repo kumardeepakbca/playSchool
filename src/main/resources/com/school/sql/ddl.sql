@@ -13,5 +13,5 @@ CREATE TABLE `user` (
 )
 COLLATE='utf8_general_ci'
 ENGINE=InnoDB
-AUTO_INCREMENT=2
+AUTO_INCREMENT=1
 ;

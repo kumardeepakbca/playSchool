@@ -162,12 +162,173 @@ $t.appendTo( $t.parent() );
 
 
 <script language="javascript">
+function nlvalidate()
+{
+	if(document.formAcymailing1.user_name.value=="" || document.formAcymailing1.user_name.value=="Name")
+	{
+		alert("Please enter Your  name");
+		document.formAcymailing1.user_name.focus();
+		return false;
+	}
+	if(document.formAcymailing1.user_name.value!="")
+	{
+		var spclChars = "!#$%^&*()/\|><'"; 
+		var content = document.formAcymailing1.user_name.value; 
+		for (var i = 0; i < content.length; i++) 
+		{ 
+		if (spclChars.indexOf(content.charAt(i)) != -1) 
+		{ 
+		alert ("Special characters are not allowed."); 
+		document.formAcymailing1.user_name.focus(); 
+		return false; 
+		} 
+		} 	
+	}
+	if(document.formAcymailing1.user_email.value=="" || document.formAcymailing1.user_email.value=="E-mail")
+	{
+		alert("Please enter valid email");
+		document.formAcymailing1.user_email.focus();
+		return false;
+	}	
+	if(document.formAcymailing1.user_email.value!="")
+	{		
+		var spclChars = "!#$%^&*()/\|><'"; 
+		var content = document.formAcymailing1.user_email.value; 
+		for (var i = 0; i < content.length; i++) 
+		{ 
+		if (spclChars.indexOf(content.charAt(i)) != -1) 
+		{ 
+		alert ("Special characters are not allowed."); 
+		document.formAcymailing1.user_email.focus(); 
+		return false; 
+		} 
+		} 
+	}
+	
+	if(document.formAcymailing1.user_email.value!="")
+	{
+	var emailRegEx = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+	 	str = document.formAcymailing1.user_email.value;
+		if(!str.match(emailRegEx)) 
+		{
+				alert("Please Enter a Valid Email address");
+				document.formAcymailing1.user_email.focus();
+				return false;
+		}
+	}
+}
 
+function donorvalidate()
+{
+	if(document.don_form.paypalamount.value=="")
+	{
+		alert("Please enter the donation amount");
+		document.don_form.paypalamount.focus();
+		return false;
+	}
+	if(document.don_form.paypalamount.value!="")
+	{
+	 var rgx = /^[0-9]*\.?[0-9]*$/;
+	 	str = document.don_form.paypalamount.value;
+		
+		if(!str.match(rgx)) 
+		{
+				alert("Please Enter amount in numbers only");
+				document.don_form.paypalamount.focus();
+				return false;
+		}
+	}
+
+}
+
+function loginValidate()
+{
+	if(document.mod_loginform.mod_login_username.value=="")
+	{
+		alert("Please enter Your User Id");
+		document.mod_loginform.mod_login_username.focus();
+		return false;
+	}
+	if(document.mod_loginform.mod_login_username.value!="")
+	{
+		var spclChars = "!#$%^&*()/\|><'=+"; 
+		var content = document.mod_loginform.mod_login_username.value; 
+		for (var i = 0; i < content.length; i++) 
+		{ 
+		if (spclChars.indexOf(content.charAt(i)) != -1) 
+		{ 
+		alert ("Special characters are not allowed."); 
+		document.mod_loginform.mod_login_username.focus(); 
+		return false; 
+		} 
+		} 
+	}
+	if(document.mod_loginform.mod_login_password.value=="")
+	{
+		alert("Please enter Your Password");
+		document.mod_loginform.mod_login_password.focus();
+		return false;
+	}
+		
+}
 
 </script>
 
  <div class="left_container_main">
         <div id="left">
+				
+          <div class="moduletable">           
+			<form  onSubmit="return loginValidate(this);" action="validateUser.php" method="post" id="mod_loginform" name="mod_loginform" style="padding:0px 0 20px 0px !important; padding:0px 0 0px 0px; margin:0 0 0px 0">
+              <div class="trigger"><a id="open" class="open" href="#" >Login</a></div>
+              <div class="toggle_container" id="login" style="display:none;">
+                <div class="block">
+                  <table width="100%" border="0" cellspacing="0" cellpadding="0" class="mod_login">
+                    <tr>					
+                      <td>
+					  <span id="mod_login_usernametext">
+					    
+                        <label for="mod_login_username">Username</label>
+                        </span><br>
+                        <input type="text" name="username" id="mod_login_username" class="inputbox" size="14">
+                        <br>
+                        <span id="mod_login_passwordtext">
+                        <label for="mod_login_password">Password</label>
+                        </span><br>
+                        <span>
+                        <input type="password" name="passwd" id="mod_login_password" class="inputbox" size="14">
+                        </span><br>
+                        <!--<input type="hidden" name="op2" value="login">
+                        <input type="hidden" name="lang" value="english">
+                        <input type="hidden" name="force_session" value="1">
+                        <input type="hidden" name="return" value="B:aHR0cDovL3RhbnRleC5vcmcvYmV0YS8=">
+                        <input type="hidden" name="message" value="0">
+                        <input type="hidden" name="loginfrom" value="loginmodule">
+                        <input type="hidden" name="cbsecuritym3" value="cbm_36150603_136efdd9_29b636076956ac6a57efaf22690351f2">
+                        <input type="hidden" name="jd827a5543d39a98e6f44540476183f9f" value="1">
+                        <input type="checkbox" name="remember" id="mod_login_remember" value="yes">
+                        <span id="mod_login_remembermetext">
+                        <label for="mod_login_remember">Remember me</label>
+                        </span><br>-->
+                        <input type="submit" name="Submit"  id="submit" class="button" value="Login"></td>
+                    </tr>
+                    <tr>
+                      <td><a href="forgotpwd.php" class="mod_login">Forgot Password?</a></td>
+                    </tr>
+                    <tr>
+                      <td>No account yet? <a href="register.php" class="mod_login">Register</a></td>
+                    </tr>
+                  </table>
+                </div>
+              </div>
+            </form>
+          </div>
+
+         
+          
+          
+		  
+		  
+         
           
           <div class="moduletable" >
             <h3>Silver Sponsors</h3>

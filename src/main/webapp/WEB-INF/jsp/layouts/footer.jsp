@@ -1,3 +1,6 @@
- <div class="flt1 ft_bg"> <a href="#" class="flt ft_txt">home</a> <img src="images/ft_sqrwhite.gif" width="3" height="3" alt="" class="flt ft_bult" /> <a href="#" class="flt ft_txt2">about Us</a> <img src="images/ft_sqrwhite.gif" width="3" height="3" alt="" class="flt ft_bult" /> <a href="#" class="flt ft_txt2">company</a> <img src="images/ft_sqrwhite.gif" width="3" height="3" alt="" class="flt ft_bult" /> <a href="#" class="flt ft_txt2">solutions</a> <img src="images/ft_sqrwhite.gif" width="3" height="3" alt="" class="flt ft_bult" /> <a href="#" class="flt ft_txt2">support</a> <img src="images/ft_sqrwhite.gif" width="3" height="3" alt="" class="flt ft_bult" /> <a href="#" class="flt ft_txt2">contact us</a><br />
-    <span class="flt1 ft_txt3">2008 Copyright,All rights reserved. <a href="http://www.buytemplates.net/CSS-XHTML-web-templates.aspx" style="color:#ffffff;">Css/Xhtml template</a> designed by buytemplates.net</span> <a href="#" class="flt ft_button"><img src="images/ft_valid1.gif" width="80" height="18" alt="" /></a> <a href="#" class="flt ft_button2"><img src="images/ft_valid2.gif" width="80" height="18" alt="" /></a></div>
-</div>
+ <div id="footer">
+      <div class="footer_content">
+        <div class="ftr_txt">Copyright &copy; 2013 TANTEX All Rights Reserved, Powered by&nbsp;<a href="http://www.objectinfo.com/index.html" target="_blank">ObjectOne</a></div>
+      </div>
+      <div class="wrap"></div>
+    </div> 

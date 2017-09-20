@@ -1,57 +1,528 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-gb" lang="en-gb" dir="ltr">
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8"></meta>
 <head>
-<title>Manage Child</title>
-<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
-<link rel="stylesheet" type="text/css" href="css/style.css" />
+<meta name="robots" content="index, follow"></meta>
+<meta name="keywords" content=""></meta>
+<meta name="description" content=""></meta>
+<meta name="generator" content=""></meta>
+<title>President's Message</title>
+
+<link rel="stylesheet" href="css/style.css" type="text/css"  async></link>
+
 </head>
 <body>
-<!-- top panel starts here -->
-<div style="margin:auto; width:1000px;">
- <jsp:include page="/WEB-INF/jsp/layouts/header.jsp"/>
-  <!-- top panel ends here -->
-  <!-- content panel starts here11 -->
-  <div id="cpblock">
-    <div class="flt1 cpinner">
-      <div class="flt lp_block"> <img src="images/lp_imgpair.jpg" width="51" height="37" alt="" class="flt1 lp_imgpair" /> <span class="flt lp_txtmem">member <span style="color:#2C3E46;">login</span></span><br />
-        <form action="login" method="post" id="loginform"/>
-        <span class="flt1 lp_txtlog">Email ID</span>
-        <input name="username" type="text" class="flt lp_textbox" />
-        <br />
-        <span class="flt1 lp_txtlog2">Password</span>
-        <input name="password" type="password" class="flt lp_textbox2" />
-        <a href="#" class="flt lp_arrow"><img src="images/lp_arrow.gif" width="24" height="20" alt="" onclick="formSubmit()" /></a>
-		 <span class="flt1 lp_txtlog" style="float: left;padding-left: 100px;width: 100%;cursor:pointer;" onclick="window.location.href='registration'">Register Yourself</span>
-		</form>
-		<img src="images/lp_boxcorn1.gif" width="258" height="12" alt="" class="flt1 lp_boxtop1" />
-        <div class="flt1 lp_boxbg"> <span class="flt1 lp_txtour">our solutions</span><br />
-          <span class="flt1 lp_boxtxt">You may conduct your financial operations in one of our branches. has employed the top security for various online transactions. Though online banking fraud is widely prevalent.ity for various online transactions. </span><br />
-          <img src="images/lp_ashsqr.jpg" width="3" height="3" alt="" class="flt1 lp_boxbult" /> <a href="#" class="flt lp_boxtxt2">Banks and Finance</a> <img src="images/lp_ashsqr.jpg" width="3" height="3" alt="" class="flt1 lp_boxbult" /> <a href="#" class="flt lp_boxtxt2">Markets and Investing</a> <img src="images/lp_ashsqr.jpg" width="3" height="3" alt="" class="flt1 lp_boxbult" /> <a href="#" class="flt lp_boxtxt2">Company and Industry</a> <img src="images/lp_ashsqr.jpg" width="3" height="3" alt="" class="flt1 lp_boxbult" /> <a href="#" class="flt lp_boxtxt2">Wealth Management</a> <img src="images/lp_ashsqr.jpg" width="3" height="3" alt="" class="flt1 lp_boxbult" /> <a href="#" class="flt lp_boxtxt2">Banking Law</a> <img src="images/lp_ashsqr.jpg" width="3" height="3" alt="" class="flt1 lp_boxbult" /> <a href="#" class="flt lp_boxtxt2">Arbitration Less</a> <img src="images/lp_ashsqr.jpg" width="3" height="3" alt="" class="flt1 lp_boxbult" /> <a href="#" class="flt lp_boxtxt2">Income Tax</a> <img src="images/lp_ashsqr.jpg" width="3" height="3" alt="" class="flt1 lp_boxbult" /> <a href="#" class="flt lp_boxtxt2">Sales Tax Charges</a> <img src="images/lp_ashsqr.jpg" width="3" height="3" alt="" class="flt1 lp_boxbult" /> <a href="#" class="flt lp_boxtxt2">Mortgage</a> <img src="images/lp_ashsqr.jpg" width="3" height="3" alt="" class="flt1 lp_boxbult" /> <a href="#" class="flt lp_boxtxt2">Credit Policy</a> <img src="images/lp_ashsqr.jpg" width="3" height="3" alt="" class="flt1 lp_boxbult" /> <a href="#" class="flt lp_boxtxt2">Others Questions</a> </div>
-        <img src="images/lp_boxcorn2.gif" width="258" height="12" alt="" class="flt1 lp_boxtop2" /> <img src="images/lp_boxcorn3.gif" width="260" height="15" alt="" class="flt1 lp_boxtop3" />
-        <div class="flt1 lp_box2bg"> <img src="images/lp_imgclient.jpg" width="45" height="40" alt="" class="flt1 lp_imgclient" /> <span class="flt lp_txtclint">client speaks</span> <span class="flt1 lp_box2txt">&#8220;You may conduct your financial conduct your financial operations in one of our branches.&#8221;<br />
-          <span style="float:right; color:#F3FF9F;">- John Ambrose</span></span> </div>
-        <img src="images/lp_boxcorn4.gif" width="260" height="14" alt="" class="flt1" /> </div>
-      <div class="flt rp_block"> <img src="images/rp_topcorn.gif" width="560" height="14" alt="" class="flt1 rp_topcornn" />
-        <div class="flt1 rp_inner"> <span class="flt rp_txtour">our <span style="color:#3F4534;">services</span></span> <span class="flt rp_nameband"><img src="images/cp_nameband.gif" width="287" height="14" alt="" /></span> <img src="images/cp_imgabacus.jpg" width="95" height="93" alt="" class="flt1 rp_abacus" /> <span class="flt rp_weltxt">We provide home loans, business loans, agricultural loans, <a href="#" style="color:#BD2E12; text-decoration:none;">VA loans, FHA loans among others</a>. If you satisfy our various requirements concerning documents, your loans will be approved in three days. Your repayment capabilities and your collateral security will be scrutinized by our experts before sanctioning the loan. financial operations in one of our financial operations in one of our <br />
-          <span class="flt rp_weltxt2"> You may conduct your financial operations in one of our branches. has employed the top security for various online transactions. Though online banking fraud is widely financial operations in one of our prevalent. </span><br />
-          <span class="flt1 rp_read"><a href="#" style="color:#BD2E12; text-decoration:none; margin:3px 0px 0px 10px;">read more</a></span> </span> <img src="images/cp_line.gif" width="511" height="1" alt="" class="flt1 rp_line" /> <span class="flt rp_txtour">our <span style="color:#3F4534;">destination</span></span> <span class="flt rp_nameband"><img src="images/cp_nameband.gif" width="287" height="14" alt="" /></span> <img src="images/cp_imgdice.jpg" width="88" height="87" alt="" class="flt1 rp_abacus" /> <span class="flt rp_weltxt">You may conduct your financial operations in one of our branches. has employed the top security for various <a href="#" style="color:#BD2E12; text-decoration:none;">online transactions</a>. Though online banking fraud is widely prevalent.ity for various <a href="#" style="color:#BD2E12; text-decoration:none;">online transactions</a>. Though online banking fraud is widely prevalent.<br />
-          <br />
-          We provide home loans, business loans, agricultural loans, <a href="#" style="color:#BD2E12; text-decoration:none;">VA loans, FHA loans among others.</a> If you satisfy our various requirements concerning documents.You may conduct your financial operations in one of our branches. <br />
-          <br />
-          <img src="images/cp_sqrred.gif" width="4" height="4" alt="" class="flt1 rp_bult" /> <a href="#" class="flt rp_linktxt">Banks and Finance</a> <img src="images/cp_sqrred.gif" width="4" height="4" alt="" class="flt1 rp_bult" /> <a href="#" class="flt rp_linktxt">Markets and Investing</a> <img src="images/cp_sqrred.gif" width="4" height="4" alt="" class="flt1 rp_bult" /> <a href="#" class="flt rp_linktxt">Company and Industry</a> <img src="images/cp_sqrred.gif" width="4" height="4" alt="" class="flt1 rp_bult" /> <a href="#" class="flt rp_linktxt">Wealth Management</a><br />
-          <span class="flt rp_weltxt2"> You may conduct your financial operations in one of all our branches. You may conduct your financial.</span><br />
-          <span class="flt1 rp_read"><a href="#" style="color:#BD2E12; text-decoration:none; margin:3px 0px 0px 10px;">read more</a></span> </span> </div>
-        <img src="images/rp_bottcorn.gif" width="560" height="14" alt="" class="flt1" /> </div>
-    </div>
-    <img src="images/cp_bottcorn.gif" width="898" height="20" alt="" class="flt1" /> </div>
-  <!-- content panel ends here -->
-  <!-- footer panel starts here11 -->
-  <jsp:include page="/WEB-INF/jsp/layouts/footer.jsp"/>
- 
-</body>
-<script>
-function formSubmit() {
-  document.getElementById("loginform").submit();
-}
+<div id="main_wrapper">
+
+  <div id="wrapper">
+  
+    <!-- Header Starts -->
+    <head>
+<link rel="stylesheet" href="css/superfish.css" type="text/css">
+</link>
+<!--<script type="text/javascript" src="js/mootools.js"></script>-->
+<!--<script type="text/javascript" src="js/caption.js"></script>-->
+<script type="text/javascript" src="js/phocagalleryslideshow.js"></script>
+<script type="text/javascript" src="js/acymailing_module.js"></script>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/jquery01.js"></script>
+<script type="text/javascript" src="js/superfish.js"></script>
+<script type="text/javascript">
+/*
+					var acymailing = Array();
+					acymailing['NAMECAPTION'] = 'Name';
+					acymailing['NAME_MISSING'] = 'Please enter your name';
+					acymailing['EMAILCAPTION'] = 'E-mail';
+					acymailing['VALID_EMAIL'] = 'Please enter a valid e-mail address';
+					acymailing['ACCEPT_TERMS'] = 'Please check the Terms and Conditions';
+					acymailing['CAPTCHA_MISSING'] = 'Please enter the security code displayed in the image';
+			*/
+jQuery.noConflict();
+jQuery(function($){ $("ul.sf-menu").superfish({hoverClass:'sfHover', pathClass:'active', pathLevels:0, delay:800, animation:{opacity:'show'}, speed:'def', autoArrows:1, dropShadows:1}) });
+jQuery.event.special.hover.delay = 100;
+jQuery.event.special.hover.speed = 100;
+
+  </script>
+<script type="text/javascript" src="js/md_style.js"></script>
+<script type="text/javascript" src="js/jquery-1.2.6.min.js"></script>
+<script type="text/javascript" src="js/jquery-easing-1.3.pack.js"></script>
+<script type="text/javascript" src="js/jquery-easing-compatibility.1.2.pack.js"></script>
+<script type="text/javascript" src="js/coda-slider.1.1.1.pack.js"></script>
+<script type="text/javascript">
+	var theInt = null;
+		var $crosslink, $navthumb;
+		var curclicked = 0;
+		
+		theInterval = function(cur){
+			clearInterval(theInt);
+			
+			if( typeof cur != 'undefined' )
+				curclicked = cur;
+			
+			$crosslink.removeClass("active-thumb");
+			$navthumb.eq(curclicked).parent().addClass("active-thumb");
+				$(".stripNav ul li a").eq(curclicked).trigger('click');
+			
+			theInt = setInterval(function(){
+				$crosslink.removeClass("active-thumb");
+				$navthumb.eq(curclicked).parent().addClass("active-thumb");
+				$(".stripNav ul li a").eq(curclicked).trigger('click');
+				curclicked++;
+				if( 6 == curclicked )
+					curclicked = 0;
+				
+			}, 3000);
+		};
+		
+		;(function($){
+			
+			$("main-photo-slider").codaSlider();
+			
+			$navthumb = $(".nav-thumb");
+			$crosslink = $(".cross-link");
+			
+			$navthumb
+			.click(function() {
+				var $this = $(this);
+				theInterval($this.parent().attr('href').slice(1) - 1);
+				return false;
+			});
+			
+			theInterval();
+		})(jQuery);
+	</script>
+<!-- Login Script Starts -->
+<!--<script type="text/javascript" src="js/jquery-1.2.6.min.js"></script>-->
+<script type="text/javascript">
+$(document).ready(function(){
+
+	//Hide (Collapse) the toggle containers on load
+	$(".toggle_container").hide(); 
+
+	//Switch the "Open" and "Close" state per click then slide up/down (depending on open/close state)
+	$("div.trigger").click(function(){
+		$(this).toggleClass("active").next().slideToggle("slow");
+	});
+
+});
 </script>
+<!-- Login Script Ends -->
+<!-- Donate Script Starts -->
+<!--<script type="text/javascript" src="js/jquery-1.2.6.min.js"></script>-->
+<script type="text/javascript">
+$(document).ready(function(){
+
+	//Hide (Collapse) the toggle containers on load
+	$(".toggle_containerdonate").hide(); 
+
+	//Switch the "Open" and "Close" state per click then slide up/down (depending on open/close state)
+	$("div.triggerdonate").click(function(){
+		$(this).toggleClass("active").next().slideToggle("slow");
+	});
+
+});
+</script>
+<!-- Donate Script Ends -->
+<!-- Content Slider Starts-->
+<link href="css/content-slider.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/contentslider.js"></script>
+<script type="text/javascript" src="js/contentslider-jquery.min.js"></script>
+<script type="text/javascript" src="js/contentslider-superfish.js"></script>
+
+</head>
+<link rel="shortcut icon" href="/images/favicon.ico" />
+<jsp:include page="/WEB-INF/jsp/layouts/header.jsp"/>
+    <!-- Header Ends -->
+
+    <!-- Content Starts -->
+    <div class="content_wrapper_main">
+      <!-- Left Content Starts -->
+      <script type="text/javascript" src="js/flashnews.js"></script>
+<!--<script src="http://code.jquery.com/jquery-1.7.1.js" type="text/javascript"></script>-->
+<link rel="stylesheet" href="css/news-ticker.css" type="text/css"/>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<script type="text/javascript">
+//<![CDATA[
+$(window).load(function(){
+$("div.bannergroupslv div").sort(function(){
+return Math.random()*10 > 5 ? 1 : -1;
+}).each(function(){
+var $t = $(this);
+$t.appendTo( $t.parent() );
+});
+});//]]> 
+</script>
+
+
+<script language="javascript">
+function nlvalidate()
+{
+	if(document.formAcymailing1.user_name.value=="" || document.formAcymailing1.user_name.value=="Name")
+	{
+		alert("Please enter Your  name");
+		document.formAcymailing1.user_name.focus();
+		return false;
+	}
+	if(document.formAcymailing1.user_name.value!="")
+	{
+		var spclChars = "!#$%^&*()/\|><'"; 
+		var content = document.formAcymailing1.user_name.value; 
+		for (var i = 0; i < content.length; i++) 
+		{ 
+		if (spclChars.indexOf(content.charAt(i)) != -1) 
+		{ 
+		alert ("Special characters are not allowed."); 
+		document.formAcymailing1.user_name.focus(); 
+		return false; 
+		} 
+		} 	
+	}
+	if(document.formAcymailing1.user_email.value=="" || document.formAcymailing1.user_email.value=="E-mail")
+	{
+		alert("Please enter valid email");
+		document.formAcymailing1.user_email.focus();
+		return false;
+	}	
+	if(document.formAcymailing1.user_email.value!="")
+	{		
+		var spclChars = "!#$%^&*()/\|><'"; 
+		var content = document.formAcymailing1.user_email.value; 
+		for (var i = 0; i < content.length; i++) 
+		{ 
+		if (spclChars.indexOf(content.charAt(i)) != -1) 
+		{ 
+		alert ("Special characters are not allowed."); 
+		document.formAcymailing1.user_email.focus(); 
+		return false; 
+		} 
+		} 
+	}
+	
+	if(document.formAcymailing1.user_email.value!="")
+	{
+	var emailRegEx = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+	 	str = document.formAcymailing1.user_email.value;
+		if(!str.match(emailRegEx)) 
+		{
+				alert("Please Enter a Valid Email address");
+				document.formAcymailing1.user_email.focus();
+				return false;
+		}
+	}
+}
+
+function donorvalidate()
+{
+	if(document.don_form.paypalamount.value=="")
+	{
+		alert("Please enter the donation amount");
+		document.don_form.paypalamount.focus();
+		return false;
+	}
+	if(document.don_form.paypalamount.value!="")
+	{
+	 var rgx = /^[0-9]*\.?[0-9]*$/;
+	 	str = document.don_form.paypalamount.value;
+		
+		if(!str.match(rgx)) 
+		{
+				alert("Please Enter amount in numbers only");
+				document.don_form.paypalamount.focus();
+				return false;
+		}
+	}
+
+}
+
+function loginValidate()
+{
+	if(document.mod_loginform.mod_login_username.value=="")
+	{
+		alert("Please enter Your User Id");
+		document.mod_loginform.mod_login_username.focus();
+		return false;
+	}
+	if(document.mod_loginform.mod_login_username.value!="")
+	{
+		var spclChars = "!#$%^&*()/\|><'=+"; 
+		var content = document.mod_loginform.mod_login_username.value; 
+		for (var i = 0; i < content.length; i++) 
+		{ 
+		if (spclChars.indexOf(content.charAt(i)) != -1) 
+		{ 
+		alert ("Special characters are not allowed."); 
+		document.mod_loginform.mod_login_username.focus(); 
+		return false; 
+		} 
+		} 
+	}
+	if(document.mod_loginform.mod_login_password.value=="")
+	{
+		alert("Please enter Your Password");
+		document.mod_loginform.mod_login_password.focus();
+		return false;
+	}
+		
+}
+
+</script>
+
+ <div class="left_container_main">
+        <div id="left">
+				
+          <div class="moduletable">           
+			<form  onSubmit="return loginValidate(this);" action="login" method="post" id="mod_loginform" name="mod_loginform" style="padding:0px 0 20px 0px !important; padding:0px 0 0px 0px; margin:0 0 0px 0">
+              <div class="trigger"><a id="open" class="open" href="#" >Login</a></div>
+              <div class="toggle_container" id="login" style="display:none;">
+                <div class="block">
+                  <table width="100%" border="0" cellspacing="0" cellpadding="0" class="mod_login">
+                    <tr>					
+                      <td>
+						  	<span id="mod_login_usernametext">
+						    
+	                        <label for="mod_login_username">Username</label>
+	                        </span><br>
+	                        <input type="text" name="username" id="mod_login_username" class="inputbox" size="14">
+	                        <br>
+	                        <span id="mod_login_passwordtext">
+	                        <label for="mod_login_password">Password</label>
+	                        </span><br>
+	                        <span>
+	                        <input type="password" name="password" id="mod_login_password" class="inputbox" size="14">
+	                        </span><br>
+	                        <input type="submit" name="Submit"  id="submit" class="button" value="Login">
+                        </td>
+                    </tr>
+                    <tr>
+                      <td><a href="fpassword" class="mod_login">Forgot Password?</a></td>
+                    </tr>
+                    <tr>
+                      <td>No account yet? <a href="registration" class="mod_login">Register</a></td>
+                    </tr>
+                  </table>
+                </div>
+              </div>
+            </form>
+          </div>
+
+         
+          
+          
+		  
+		  
+         
+          
+          <div class="moduletable" >
+            <h3>Silver Sponsors</h3>
+            <div class="bannergroupslv">
+              <div class="banneritem"  style="text-align:center;"><a href="http://avanttax.com/" target="_blank"><img src="banners/webadmin1485314220Avanttax logo.jpg" alt="Banner" width="150" ></a>
+                <div class="clr"></div>
+              </div>
+                          <div class="banneritem"  style="text-align:center;"><a href="" target="_blank"><img src="banners/1454210160webadmin1453173360Peackock_logo_scl.jpg" alt="Banner" width="150" ></a>
+                <div class="clr"></div>
+              </div>
+                          <div class="banneritem"  style="text-align:center;"><a href="" target="_blank"><img src="banners/admin1420946100Omega_Logo-edit-by-ppm_20140811.jpg" alt="Banner" width="150" ></a>
+                <div class="clr"></div>
+              </div>
+            
+            </div>
+          </div>
+          
+        </div>
+      </div>      <!-- Left Content Ends -->
+      <!-- Middle Content Starts -->
+    
+      <div class="middle_container_main">
+	  	  
+        <div class="middle_contentbox_main">
+		 
+          <div class="component_heading">Latest News</div>
+		             <div class="content_box_main">
+		  
+		     <link rel="stylesheet" href="css/bjqs.css">
+    <link rel="stylesheet" href="css/demo.css">
+
+    <!-- load jQuery and the plugin -->
+    <script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+    <script src="js/bjqs-1.3.min.js"></script>
+       <script class="secret-source">
+        jQuery(document).ready(function($) {
+
+          $('#banner-fade').bjqs({
+            height      : 180,
+            width       : 568,
+            responsive  : true
+          });
+
+        });
+      </script>  
+    <div id="container">
+      <!--  Outer wrapper for presentation only-->
+      <div id="banner-fade">
+        <!-- start Basic Jquery Slider -->	
+        <ul class="bjqs">
+				
+          <li><a href="http://tantex.org/" title="THANK YOU for attending Telugu Vaibhavam / NNTV 10th Anniversary"  ><img src="/banners/webadmin1503544620IMG_8375_1.jpg" title="THANK YOU for attending Telugu Vaibhavam / NNTV 10th Anniversary"></a></li>
+		          </ul>
+        <!-- end Basic jQuery Slider -->
+      </div>
+      <!-- End outer wrapper -->
+    </div>		 	
+          </div>
+		  		  
+        </div>
+       
+
+		
+		<!--	Latest News code begins						--->
+		
+		
+		
+	
+      </div>
+      <!-- Middle Content Ends -->
+      <!-- Right Content Starts -->
+      <!--<script type="text/javascript" src="js/jquery1.js"> </script>-->
+
+<script type="text/javascript" src="js/flashnews.js"></script>
+<script src="http://code.jquery.com/jquery-1.7.1.js" type="text/javascript"></script>
+<link rel="stylesheet" href="css/news-ticker.css" type="text/css"/>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<script type="text/javascript">
+//<![CDATA[
+//<![CDATA[
+$(window).load(function(){
+$("div.bannergroupdia div").sort(function(){
+return Math.random()*10 > 5 ? 1 : -1;
+}).each(function(){
+var $t = $(this);
+$t.appendTo( $t.parent() );
+});
+});
+$(window).load(function(){
+$("div.bannergroupplat div").sort(function(){
+return Math.random()*10 > 5 ? 1 : -1;
+}).each(function(){
+var $t = $(this);
+$t.appendTo( $t.parent() );
+});
+});//]]> 
+$(window).load(function(){
+$("div.bannergroupgol div").sort(function(){
+return Math.random()*10 > 5 ? 1 : -1;
+}).each(function(){
+var $t = $(this);
+$t.appendTo( $t.parent() );
+});
+});//]]> 
+$(window).load(function(){
+$("div.bannergroupslv div").sort(function(){
+return Math.random()*10 > 5 ? 1 : -1;
+}).each(function(){
+var $t = $(this);
+$t.appendTo( $t.parent() );
+});
+});//]]> 
+
+</script>
+
+<div class="right_container_main">
+        <div id="right">
+		
+		<!--  Right corner banner realated to Event Ticketing  begins-->
+        <!--<div class="moduletable"  >           	
+            <div class="bannergroupplat" >
+			
+              <div class="banneritem" ><a href="http://tantex.org/memberVerification.php?ev_id=351" target="_blank" ><img src="banners/ugaadi-Utsavaalu.jpg" alt="Banner"></a>
+                <div class="clr"></div>
+              </div>             
+            </div>
+          </div>-->		  
+		  
+		  <!--<div class="moduletable"  >
+           	
+            <div class="bannergroupplat" >
+			
+              <div class="banneritem" ><a href="http://tantex.org/memberVerification.php?ev_id=170" target="_blank"><img src="banners/season_pass_banner.jpg" alt="Banner"></a>
+                <div class="clr"></div>
+              </div>       
+             
+            </div>
+          </div>-->
+		  
+		  
+		  <!--  Right corner banner realated to Event Ticketing  ends-->
+		  
+          <div class="moduletable" id="platinum" >
+            <h3>Diamond Sponsors</h3>			
+            <div class="bannergroupdia" >
+			
+     
+             
+            </div>
+          </div>
+                    
+          
+          <div class="moduletable" id="platinum" >
+            <h3>Platinum Sponsors</h3>			
+            <div class="bannergroupplat" >
+			
+              <div class="banneritem" ><a href="http://www.mehtajewellery.com/" target="_blank"><img src="banners/webadmin1485746220mehh1scaled.jpg" alt="Banner"></a>
+                <div class="clr"></div>
+              </div>
+                          <div class="banneritem" ><a href="http://www.sdilogic.com" target="_blank"><img src="banners/webadmin1434510900SDILogic_web.jpg" alt="Banner"></a>
+                <div class="clr"></div>
+              </div>
+                          <div class="banneritem" ><a href="http://www.bawarchibiryanipoint.com/" target="_blank"><img src="banners/webadmin1493090220Bawarchi1.jpg" alt="Banner"></a>
+                <div class="clr"></div>
+              </div>
+                 
+             
+            </div>
+          </div>
+
+               <div class="moduletable" >
+            <h3>Gold Sponsors</h3>
+            <div class="bannergroupgol">
+			
+              <div class="banneritem"><a href="" target="_blank"><img src="banners/admin1420859700VikramJangam_Scaled.jpg" alt="Banner"></a>
+                <div class="clr"></div>
+              </div>
+                          <div class="banneritem"><a href="http://www.ourtaxcpa.com/" target="_blank"><img src="banners/admin1382238780b47_Vish Palepu_Other_150_50_with Border.jpg" alt="Banner"></a>
+                <div class="clr"></div>
+              </div>
+                          <div class="banneritem"><a href="http://www.mytaxfiler.com/" target="_blank"><img src="banners/webadmin1455246960Mytaxfiler Logo.jpg" alt="Banner"></a>
+                <div class="clr"></div>
+              </div>
+                          <div class="banneritem"><a href="http://www.pasandrestaurant.com/" target="_blank"><img src="banners/admin1365279180pasand_border-gold.jpg" alt="Banner"></a>
+                <div class="clr"></div>
+              </div>
+            
+            </div>
+          </div>
+        
+          
+        </div>
+      </div>      <!-- Right Content Ends -->
+    </div>
+    <!-- Content Ends -->
+    <!-- Footer Starts -->
+       <!-- Footer Ends -->
+  </div>
+</div>
+</body>
 </html>

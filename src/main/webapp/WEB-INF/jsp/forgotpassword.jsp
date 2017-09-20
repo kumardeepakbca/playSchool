@@ -162,7 +162,32 @@ $t.appendTo( $t.parent() );
 
 
 <script language="javascript">
-
+function Validate()
+{
+	if(document.forgotpassword.email.value!="")
+	{		
+		var spclChars = "!#$%^&*()/\|><'"; 
+		var content = document.forgotpassword.email.value; 
+		for (var i = 0; i < content.length; i++) 
+		{ 
+		if (spclChars.indexOf(content.charAt(i)) != -1) 
+		{ 
+		alert ("Special characters are not allowed."); 
+		document.forgotpassword.email.focus(); 
+		return false; 
+		} 
+		} 
+	}
+	
+	var emailRegEx = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+	 		str = document.forgotpassword.email.value;
+		if(!str.match(emailRegEx)) 
+		{
+				alert("Please Enter a Valid Email address");
+				document.forgotpassword.email.focus();
+				return false;
+		}	
+}
 
 </script>
 
@@ -189,53 +214,31 @@ $t.appendTo( $t.parent() );
       </div>      <!-- Left Content Ends -->
       <!-- Middle Content Starts -->
     
-      <div class="middle_container_main">
-	  	  
-        <div class="middle_contentbox_main">
-		 
-          <div class="component_heading">Latest News</div>
-		             <div class="content_box_main">
-		  
-		     <link rel="stylesheet" href="css/bjqs.css">
-    <link rel="stylesheet" href="css/demo.css">
-
-    <!-- load jQuery and the plugin -->
-    <script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
-    <script src="js/bjqs-1.3.min.js"></script>
-       <script class="secret-source">
-        jQuery(document).ready(function($) {
-
-          $('#banner-fade').bjqs({
-            height      : 180,
-            width       : 568,
-            responsive  : true
-          });
-
-        });
-      </script>  
-    <div id="container">
-      <!--  Outer wrapper for presentation only-->
-      <div id="banner-fade">
-        <!-- start Basic Jquery Slider -->	
-        <ul class="bjqs">
-				
-          <li><a href="http://tantex.org/" title="THANK YOU for attending Telugu Vaibhavam / NNTV 10th Anniversary"  ><img src="/banners/webadmin1503544620IMG_8375_1.jpg" title="THANK YOU for attending Telugu Vaibhavam / NNTV 10th Anniversary"></a></li>
-		          </ul>
-        <!-- end Basic jQuery Slider -->
-      </div>
-      <!-- End outer wrapper -->
-    </div>		 	
+        <div class="middle_container_main">
+        <div class="middle_contentbox_main ">		
+          <div class="component_heading">Forgot Password</div>
+		  <div class="red_txt" style="margin:0 0 10px 0;"></div>
+          <div class="content_box_main">
+           <!-- forgot password design starts here --> 
+		    		   	<form name="forgotpassword" action="fpassword" method="post" >
+			<table class="contentpane" id="registrationTable">
+			
+					
+					  <tr class="sectiontableentry2 cbft_primaryemailaddress" id="cbfr_50">
+                        <td width="50" class="newsletter_txt">Enter Your Mailid:</td>
+                        <td width="483" ><input type="text" name="email" id="email" value=""  mosReq="1" mosLabel="Email" size="25" class="email required inputbox" />
+                        </td>
+                      </tr>
+					  <tr><td>&nbsp;</td></tr>
+					  <tr>
+					  <td class="titleCell"></td>
+                        <td ><input type="submit" value="Submit" name="Submit" id="Submit" class="button" onClick="return Validate()" /></td>
+                      </tr>
+                  </table>
+				</form>
+							<!-- forgot password design ends here --> 
           </div>
-		  		  
         </div>
-       
-
-		
-		<!--	Latest News code begins						--->
-		
-		
-		
-	
       </div>
       <!-- Middle Content Ends -->
       <!-- Right Content Starts -->

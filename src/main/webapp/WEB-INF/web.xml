@@ -17,6 +17,23 @@
         <url-pattern>/registration</url-pattern>
     </servlet-mapping>
     
+    <servlet>
+        <servlet-name>KidsRegistrationServlet</servlet-name>
+        <servlet-class>com.school.servlet.KidsRegistrationServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>KidsRegistrationServlet</servlet-name>
+        <url-pattern>/kidsRegistration</url-pattern>
+    </servlet-mapping>
+     <servlet>
+        <servlet-name>ForgotPasswordServlet</servlet-name>
+        <servlet-class>com.school.servlet.ForgotPasswordServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ForgotPasswordServlet</servlet-name>
+        <url-pattern>/fpassword</url-pattern>
+    </servlet-mapping>
+    
       <servlet>
         <servlet-name>LogoutServlet</servlet-name>
         <servlet-class>com.school.servlet.LogoutServlet</servlet-class>
